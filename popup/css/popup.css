@@ -1,4 +1,5 @@
 @font-face { font-family: 'Uni Sans Heavy'; src: url('/popup/fonts/UniSansHeavy.otf'); } 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html,
 body {
@@ -14,7 +15,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: system-ui;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   color: #444;
   padding: 0;
@@ -22,15 +23,10 @@ body {
   min-width: 315px;
   position: relative;
   font-size: 15px;
-  background: #fff;
 }
 a {
   outline: none;
   color: #3477db;
-}
-#popupContent {
-  opacity: 0;
-  transition: opacity 200ms ease;
 }
 #statusDetail a {
   color: #ffffff;
@@ -43,14 +39,11 @@ a {
 }
 .group {
   padding: 10px 0;
-}
-#optsCurrent,
-#optsAll,
-#optsSelected {
   border-bottom: 1px solid #ccc;
 }
 
 .menuOption {
+  display: block;
   line-height: 2em;
   font-size: 16px;
   white-space: nowrap;

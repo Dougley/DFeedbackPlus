@@ -1,13 +1,9 @@
 {
    "content_scripts": [ 
       {
-         "js": [ "inject/copy-id.js" ],
+         "js": [ "inject/copy-id.js", "inject/copy-link.js" ],
          "matches": [ "https://support.discordapp.com/hc/*/community/*" ]
-      },
-      {
-         "js": [ "inject/copy-link.js" ],
-         "matches": [ "https://support.discordapp.com/hc/*/community/*" ]
-      } 
+      }
    ],
    "description": "Helper for Discord Feedback",
    "manifest_version": 2,
