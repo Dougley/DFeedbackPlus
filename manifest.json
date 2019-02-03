@@ -1,0 +1,26 @@
+{
+   "content_scripts": [ 
+      {
+         "js": [ "inject/copy-id.js" ],
+         "matches": [ "https://support.discordapp.com/hc/*/community/*" ]
+      },
+      {
+         "js": [ "inject/copy-link.js" ],
+         "matches": [ "https://support.discordapp.com/hc/*/community/*" ]
+      } 
+   ],
+   "description": "Helper for Discord Feedback",
+   "manifest_version": 2,
+   "name": "DFeedbackPlus",
+   "permissions": ["https://support.discordapp.com/hc/*/community/*", "clipboardWrite" ],
+   "version": "0.2.2",
+   "icons": {
+      "110": "icons/mbdwi.png"
+   },
+   "browser_action": {
+      "default_popup": "popup/index.html",
+      "default_icon": {
+         "110": "icons/mbdwi.png"
+      }   
+   }
+}

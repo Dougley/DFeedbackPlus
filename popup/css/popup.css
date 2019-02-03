@@ -1,0 +1,62 @@
+@font-face { font-family: 'Uni Sans Heavy'; src: url('/popup/fonts/UniSansHeavy.otf'); } 
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: system-ui;
+  font-weight: 200;
+  color: #444;
+  padding: 0;
+  margin: 0;
+  min-width: 315px;
+  position: relative;
+  font-size: 15px;
+  background: #fff;
+}
+a {
+  outline: none;
+  color: #3477db;
+}
+#popupContent {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+#statusDetail a {
+  color: #ffffff;
+}
+#header {
+  font-family: 'Uni Sans Heavy';
+  padding: 15px 12px;
+  background: #7289DA;
+  color: #fff;
+}
+.group {
+  padding: 10px 0;
+}
+#optsCurrent,
+#optsAll,
+#optsSelected {
+  border-bottom: 1px solid #ccc;
+}
+
+.menuOption {
+  line-height: 2em;
+  font-size: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.menuOption:hover .optionText {
+  text-decoration: underline;
+}
