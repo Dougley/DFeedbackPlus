@@ -9,11 +9,11 @@
    "manifest_version": 2,
    "name": "DFeedbackPlus",
    "permissions": ["https://support.discordapp.com/hc/*/community/*", "clipboardWrite" ],
-   "version": "0.3.0",
+   "version": "0.3.1",
    "icons": {
       "128": "icons/mbdwi.png"
    },
-   "browser_action": {
+   "page_action": {
       "default_popup": "popup/index.html",
       "default_icon": {
          "128": "icons/mbdwi.png"
